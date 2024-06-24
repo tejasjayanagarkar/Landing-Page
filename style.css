@@ -1,0 +1,333 @@
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* ==============
+        Header 
+================*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    padding: 2;
+    text-align: center;
+    color: #ff6347;
+}
+
+nav ul {
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li:hover{
+    font-size: 1.1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #ff4c4c;
+}
+
+
+
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust based on your needs */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('assets/main-bg.jpg') no-repeat center center/cover;
+}
+
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px; /* Adjust as necessary */
+}
+
+.hero-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+#hero-head {
+    margin-left: 0rem;
+}
+#hero-head .color1 {
+    color: white; 
+}
+
+#hero-head .color2 {
+    color: #ff4c4c; 
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-text #hero-para {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* ======================
+            About 
+======================= */ 
+
+.about-section {
+    position: relative; 
+    padding: 20px;
+}
+
+.about-section .container {
+    position: relative;
+    z-index: 1; 
+}
+
+.about-section .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%; 
+    background-image: url('assets/about.png'); 
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+    z-index: 0;
+}
+
+.about-section h3 {
+    text-align: left;
+    color: #ff4c4c;
+}
+
+.about-section .container p {
+    text-align: left;
+    color: #fff; 
+    margin-bottom: 20px; 
+}
+
+.about-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*===================
+            Services
+====================*/
+
+.content-section {
+    padding: 50px 0;
+}
+
+.content-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.content-section h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+    margin-top: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px black;
+}
+
+.service img {
+    width: 300px;
+    height: 300px;
+}
+
+.service-details {
+    padding: 10px;
+}
+
+.service-details h2 {
+    margin-top: 0;
+}
+
+.service-details p {
+    margin-bottom: 0;
+}
+
+
+/*================
+        Contact
+================*/
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 46%;
+}
+
+#blank-trainer-contact {
+    height: 10px;
+    width: 100%;
+}
+#about, #services, #trainers, #contact {
+    text-align: center;
+}
+
+#trainers .trainers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#trainers .trainer {
+    margin: 20px;
+    text-align: center;
+}
+
+#trainers .trainer img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 90vh;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero {
+        padding: 50px 0;
+    }
+
+    .hero-text h2 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    #trainers .trainer {
+        margin: 10px;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 0.9em;
+    }
+
+    .cta-btn {
+        padding: 8px 16px;
+    }
+
+    form button {
+        padding: 8px 16px;
+    }
+}
